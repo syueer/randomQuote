@@ -5,7 +5,7 @@ import quotes from "./data"
 const App = () => {
 
   const [quote, setQuote] = useState({
-    context: quotes[0].context,
+    content: quotes[0].content,
     author: quotes[0].author
   })
 
@@ -13,7 +13,7 @@ const App = () => {
     const randomNumber = Math.floor(Math.random() * quotes.length);
     const randomQuotes = quotes[randomNumber]
     setQuote({
-      context: randomQuotes.context,
+      content: randomQuotes.content,
       author: randomQuotes.author
     })
   }

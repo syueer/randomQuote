@@ -3,7 +3,7 @@ import React from 'react'
 const DisplayBox = ({ quote, changeQuote }) => {
   return (
     <div>
-      <div id="text">{quote.context}</div>
+      <div id="text">{quote.content}</div>
       <div id="author">{quote.author}</div>
       <div>
         <a className="button" id="tweet-quote" href="http://twitter.com/intent/tweet">
