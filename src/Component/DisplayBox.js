@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Text = ({ state, changeQuote }) => {
+const DisplayBox = ({ quote, changeQuote }) => {
   return (
     <div>
-      <div id="text">{state.quote}</div>
-      <div id="author">{state.author}</div>
+      <div id="text">{quote.context}</div>
+      <div id="author">{quote.author}</div>
       <div>
         <a className="button" id="tweet-quote" href="http://twitter.com/intent/tweet">
           <i className="fab fa-twitter"></i>
@@ -18,4 +18,4 @@ const Text = ({ state, changeQuote }) => {
   )
 }
 
-export default Text
+export default DisplayBox
